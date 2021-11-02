@@ -1,0 +1,323 @@
+body{
+    background:rgba(0,0,0,0.8);
+    padding:0;
+    margin:0;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+nav {
+  background-color: #0f6a6d;
+  margin: 0;
+  overflow: hidden;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li a {
+  color: white;
+  display: block;
+  /* line-height: 3em; */
+  padding: 15px;
+  text-decoration: none;
+}
+nav ul li:first-child {
+  margin-right: auto;
+}
+nav ul li a.logo {
+  background-color: black;
+
+
+}
+nav ul li a:hover {
+  background-color: lightgray;
+}
+.logo{
+  display: block;
+  /* margin-left: auto; */
+  margin-right: auto;
+  width:340px;
+
+}
+/* article{ */
+  /* width: 33%; */
+  /* height: 600px; */
+
+/* } */
+/* .relative{ */
+  /* position: absolute; */
+  /* color: white; */
+  /* padding: 0; */
+  /* width: 33%; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* max-width: none; */
+/* } */
+/* .circle{ */
+  /* position: relative; */
+  /* z-index: 10; */
+  /* width: 330px; */
+  /* max-width: 100%; */
+  /* display: block; */
+  /* text-align: center; */
+  /* margin-bottom: 20px; */
+  /* margin: 0 auto 20px auto; */
+}
+/* figure{ */
+  /* margin-top: 50px; */
+  /* width: 330px; */
+  /* height: 330px; */
+  /* overflow: hidden; */
+  /* border-radius: 200px; */
+  /* border-width: 10px; */
+  /* border-style: solid; */
+
+  }
+/* figure img{ */
+  /* width: 100%; */
+  /* height: auto; */
+}
+/* h1{ */
+  /* width: 425px; */
+  /* height: 500px; */
+}
+/* .different-spots{ */
+  /* background-color: #3b7678; */
+}
+
+
+
+/* Styles for hero */
+/* .hero{ */
+    /* background-image: url("hair-2537564_1920.jpg"); */
+    /* Height of the hero is 60% of the Viewport Height */
+    /* height:60vh; */
+    /* Make the image fill the space with 'cover' */
+    /* background-size:cover; */
+    /*background-repeat: no-repeat; */
+    /* Show more of the right side of the image */
+    /* background-position: right; */
+    /* Must have position relative for the text and button to sit on top of the hero */
+    /* position: relative; */
+}
+/* .hero h2{ */
+  /* Must have position absolute to move text around the hero container */
+    /* position: absolute; */
+    /* Use top, right, bottom or left to play with the position of the text */
+    /* bottom:20%; */
+    /* right:5%; */
+}
+/* button{ */
+  /* Must have position absolute to move button around the hero container */
+    /* position:absolute; */
+    /* Use top, right, bottom or left to play with the position of the text */
+    /* bottom: 8%; */
+    /* right:5%; */
+    /* remove background color for button */
+    /* background: none; */
+    /* padding:5px; */
+    /* add border for an outline */
+    /* border:2px black solid; */
+    /* color:black; */
+    /* font-size: 1.3em; */
+    /* round the edges of button */
+    /* border-radius: 5px; */
+}
+
+/* END CONTACT HERO STYLES ------------------ */
+
+img{
+    /* Make all images responsive */
+    width: 100%;
+    /* Make it so they can be centered */
+    display: block;
+    margin:1% auto;
+}
+
+/* PLACE CSS HERE */
+.main-container{
+  display:flex;
+  flex-wrap: wrap;
+/*  Change this width to better fit your web design  */
+  width:70%;
+/*   use hight with a measurement of vh, for viewport height. this is 80% of the viewport, just replace the percentage with vh */
+
+/* center the flex container with margin auto and by defining a width */
+  margin-right:auto;
+  margin-left:auto;
+}
+/* a space between these means that every div inside of the flex-container will have these properties */
+.main-container a{
+  text-decoration:none;
+/*  LINK COLOR  */
+  color:white;
+
+}
+.main-container div{
+/*  flex-grow allows boxes to be bigger to fill space */
+  flex-grow:1;
+/* Change width based on how much space you need OR use min-width */
+  width:170px;
+}
+h2{
+  text-align:center;
+  margin-top:45%;
+}
+
+.one{
+  background-color: #B23A48;
+}
+.one .circle{
+    background-image: url("girlwithtraditionalwear.jpeg");
+/*  Place about image path above  */
+    background-size: cover;
+    background-position:top;
+}
+.two{
+  background-color: #f6bd60;
+}
+.two .circle{
+    background-image: url("sambousa.jpeg");
+/*  Place about image path above  */
+    background-size: cover;
+    background-position:center;
+}
+.three{
+  background-color: #84a59d;
+}
+.three .circle{
+    background-image: url("guysmellingspices.jpg");
+/*  Place about image path above  */
+    background-size: cover;
+    background-position:center;
+}
+
+.circle{
+  border-radius:50%;
+  height:220px;
+  width:220px;
+  border:solid gray 4px;
+  height:220px;
+  width:220px;
+  overflow:hidden;
+  margin:60% auto;
+}
+.circle h2{
+  text-align:center;
+}
+
+.flex-container {
+  display: block;
+
+  padding:10px;
+}
+.flex-container div {
+  background-color: gray;
+  margin-bottom: 10px;
+  min-width: 100px;
+  grid-gap: 10px;
+  padding:2%;
+  flex-grow: 1;
+}
+  h3{
+    text-align:center;
+    margin-top:10%;
+    font-family: 'Libre Baskerville', serif;
+}
+  P{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+  }
+  div p{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+  }
+
+
+
+
+
+  /* flex-shrink: 1; */
+}
+
+
+
+
+footer{
+    background: rgba(0,0,0,0.8);
+    padding: 40px;
+}
+
+footer p{
+    color: white;
+  }
+  footer span{
+
+  }
+  .fa {
+
+  /* font-size: 30px; */
+  width: 130px;
+  height: 90%;
+  text-align: center;
+  text-decoration: none;
+
+}
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+  .fa-instagram {
+  background: #833AB4;
+  color: white;
+}
+.fa-angle-double-up{
+  background: #930000;
+  color: white;
+}
+
+
+footer a{
+    color:white;
+}
+
+/* Start Media Query */
+
+/* medium screen size below --------- */
+@media screen and (min-width: 600px) {
+        .logo{
+            /* width:250px; */
+        }
+        .main-container{
+          height:80vh;
+        }
+        .nav ul li a{
+          line-height: 3em;
+          padding: 15px;
+        }
+
+
+        .flex-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding:10px;
+        }
+
+
+}
+/* large screen styles below */
+@media screen and (min-width: 1300px) {
+
+
+
+}
