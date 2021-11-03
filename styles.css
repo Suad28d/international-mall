@@ -196,7 +196,6 @@ h2{
     background-size: cover;
     background-position:center;
 }
-
 .circle{
   border-radius:50%;
   height:220px;
@@ -217,7 +216,7 @@ h2{
   padding:10px;
 }
 .flex-container div {
-  background-color: gray;
+  background-color: #0f6a6d;
   margin-bottom: 10px;
   min-width: 100px;
   grid-gap: 10px;
@@ -228,7 +227,8 @@ h2{
     text-align:center;
     margin-top:10%;
     font-family: 'Libre Baskerville', serif;
-}
+    color: White;
+  }
   P{
     text-align: center;
     font-family: 'Libre Baskerville', serif;
@@ -236,18 +236,12 @@ h2{
   div p{
     text-align: center;
     font-family: 'Libre Baskerville', serif;
+    color: White;
+
   }
-
-
-
-
 
   /* flex-shrink: 1; */
 }
-
-
-
-
 footer{
     background: rgba(0,0,0,0.8);
     padding: 40px;
@@ -260,7 +254,6 @@ footer p{
 
   }
   .fa {
-
   /* font-size: 30px; */
   width: 130px;
   height: 90%;
@@ -271,12 +264,11 @@ footer p{
 .fa:hover {
     opacity: 0.5;
 }
-
 .fa-facebook {
   background: #3B5998;
   color: white;
 }
-  .fa-instagram {
+.fa-instagram {
   background: #833AB4;
   color: white;
 }
