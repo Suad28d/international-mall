@@ -5,6 +5,40 @@ body{
     font-family: Helvetica, sans-serif;
     font-size: 16px;
 }
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:340px;
+
+}
+img{
+    /* Make all images responsive */
+    width: 100%;
+    /* display: block;
+    margin:1% auto; */
+}
+h1{
+  text-align:center;
+  margin-top:45%;
+  color: white;
+
+}
+p{
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+}
+div p{
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  color: white;
+}
+header{
+  background: linear-gradient(180deg, rgba(255,255,255,1) 65%, rgba(0,0,0,1) 65%);
+
+}
+
+/* START NAV STYLES -------------------------------- */
 nav {
   background-color: #0f6a6d;
   margin: 0;
@@ -14,8 +48,14 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.fa-search{
+  display:inline !important;
 }
 nav ul li {
+  /* width: 25%; */
   display: inline-block;
   list-style-type: none;
 }
@@ -26,47 +66,21 @@ nav ul li a {
   padding: 15px;
   text-decoration: none;
 }
-nav ul li:first-child {
-  margin-right: auto;
+/* nav ul li:first-child { */
+  /* margin-right: auto; */
 }
 nav ul li a.logo {
   background-color: black;
-
-
 }
 nav ul li a:hover {
   background-color: lightgray;
 }
-.logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:340px;
 
-}
-.button{
-  font-family:'Libre Baskerville', 'Times New Roman',serif;
-  line-height: 1em;
-  color: black;
-}
-.map{
-  align-items: center;
-  padding: 5px;
-}
-
-
-
-
-
-.nav-about{
-
-}
-
-.container {
+/* .container {
   max-width: 1050px;
   width: 90%;
   margin: auto;
-}
+} */
 
 .navbar {
   width: 100%;
@@ -106,13 +120,12 @@ nav ul li a:hover {
   position: relative;
   height: 60px;
 }
-
 .nav-container .checkbox {
   position: absolute;
   display: block;
-  height: 32px;
+  height: 52px;
   width: 32px;
-  top: 20px;
+  top: 10px;
   left: 20px;
   z-index: 5;
   opacity: 0;
@@ -174,13 +187,7 @@ nav ul li a:hover {
   font-weight: 500;
 }
 
-.logo {
-  /* position: absolute;
-  top: 5px;
-  right: 15px; */
-  font-size: 1.2rem;
-  color: #0e2431;
-}
+
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
@@ -201,96 +208,139 @@ nav ul li a:hover {
 .nav-container input[type="checkbox"]:checked ~ .logo{
   display: none;
 }
+/* END NAV STYLES------------------------------------- */
+
+
+
 .about-hero{
   background: url("newpic.jpeg");
   /* https://i.pinimg.com/564x/72/03/a5/7203a57a9c1d6a1d44a16c02758f4333.jpg  */
   background-size: cover;
-  background-position: center;
-  height: 600px;
-  /* width: 45%; */
-  padding: 5px;
-
-}
-  section h1{
-    text-align: left;
-    margin-left: 5%;
-    right:auto;
-    font-family: 'Libre Baskerville', 'Times New Roman',serif;
-    color: White;
-
-    }
-    section p{
-  text-align:left!important;
-  line-height: 1.4em;
-  color: white!important;
-  font-family: 'Libre Baskerville', 'Times New Roman',serif;
-}
-  section{
-    width: 80%;
-    margin: 30px auto;
+  height: 1100px;
   }
-  /* .rice{ */
-    /* background-position: center; */
-    /* height: 600px; */
-    /* padding: 5px; */
-/* } */
-  /* .rice p{ */
-    /* text-align:left!important; */
-    /* line-height: 1.4em; */
-    /* color: white!important; */
-    /* margin-left: 5%; */
-    /* right:auto; */
-    /* font-family: 'Libre Baskerville', 'Times New Roman',serif; */
 
 
-  /* } */
+.about-hero h1{
+  text-align: left;
+  margin-left: 5%;
+  right:auto;
+  font-family: 'Libre Baskerville', serif;
+  color: White;
 
-
-
-img{
-    /* Make all images responsive */
-    width: 100%;
-    /* Make it so they can be centered */
-    display: block;
-    margin:1% auto;
+}
+.about-hero p{
+  text-align:left;
+  font-family: 'Libre Baskerville', serif;
+  color: white;
+}
+section{
+  margin:15px;
+  color:white!important;
 }
 
-/* PLACE CSS HERE */
+/* * BEGIN CONTACT US STYLES */
+
+.contact-hero{
+  background: url("guysmellingspices1.jpg");
+  /* https://www.pexels.com/photo/man-in-blue-shirt-inside-a-local-store-3889827/ */
+  background-size: cover;
+  height: 900px;
+  /* width: 100%; */
+}
+/* .contact-hero h3{ */
+  /* text-align: left; */
+  /* margin-left: 5%; */
+  /* right:auto; */
+  /* font-family: 'Libre Baskerville', serif; */
+  /* color: White; */
+
+
+/* } */
 .main-container{
   display:flex;
   flex-wrap: wrap;
-/*  Change this width to better fit your web design  */
-  width:70%;
-/*   use hight with a measurement of vh, for viewport height. this is 80% of the viewport, just replace the percentage with vh */
-
-/* center the flex container with margin auto and by defining a width */
+  /* width:90%; */
   margin-right:auto;
   margin-left:auto;
 }
-/* a space between these means that every div inside of the flex-container will have these properties */
 .main-container a{
   text-decoration:none;
-/*  LINK COLOR  */
   color:white;
+}
+/* START MOBILE FORM STYLES */
 
-}
+    .form-container{
+/*       TO CENTER add AUTO for margin right and left*/
+      margin: 20px auto;
+/*  WIDTH 100%  FOR MOBILE DEVICES*/
+      width:90%;
+      padding: 20px;
+      /* align: center; */
+      /* justify-content: center; */
+      /* display:flex; */
+      font-size:1em;
+    }
+    form p{
+      margin-bottom:5px;
+
+    }
+    label{
+      display:block;
+      color: white;
+    }
+    #newsletter input{
+      display:inline;
+      width:auto;
+    }
+    input{
+      /* FOR MOBILE use WIDTH:100% */
+      width:60%;
+      padding:1.2%;
+      margin:1.5% 0;
+      font-size: 1em;
+      border-radius: 4px;
+      border:1px solid #ccc;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+    textarea{
+      min-height:100px;
+       /* FOR MOBILE use WIDTH:100% */
+      width: 100%;
+      padding: 2%;
+      margin: 1.5% 0;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button{
+      /* CHANGED COLORS bellow */
+      background: #45A99F;
+      border: 1px solid #45A99F;
+      /* Rounded corners */
+      border-radius: 4px;
+      /* Text color */
+      color:white;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding:10px 20px;
+      font-size: 1.1em;
+    }
+  /*        END MOBILE FORM STYLES */
 .main-container div{
-/*  flex-grow allows boxes to be bigger to fill space */
   flex-grow:1;
-/* Change width based on how much space you need OR use min-width */
-  width:170px;
+/* Change width to flex-basis */
+  flex-basis:170px;
 }
-h2{
-  text-align:center;
-  margin-top:45%;
-}
+
 
 .one{
   background-color: #B23A48;
 }
 .one .circle{
     background-image: url("newpic.jpeg");
-/*  Place about image path above  */
+/*    */
     background-size: cover;
     background-position:top;
 }
@@ -299,7 +349,7 @@ h2{
 }
 .two .circle{
     background-image: url("sambousa.jpeg");
-/*  Place about image path above  */
+/*  https://i.pinimg.com/564x/37/bb/f8/37bbf80bb8fa997fdff4594f02733933.jpg  */
     background-size: cover;
     background-position:center;
 }
@@ -308,7 +358,7 @@ h2{
 }
 .three .circle{
     background-image: url("guysmellingspices1.jpg");
-/*  Place about image path above  */
+/*  https://www.pexels.com/photo/man-in-blue-shirt-inside-a-local-store-3889827/  */
     background-size: cover;
     background-position:center;
 }
@@ -317,8 +367,6 @@ h2{
   height:220px;
   width:220px;
   border:solid gray 4px;
-  height:220px;
-  width:220px;
   overflow:hidden;
   margin:60% auto;
 }
@@ -326,58 +374,53 @@ h2{
   text-align:center;
 }
 
+footer{
+background-color: #0f6a6d;
+}
+
+footer p{
+  color: white;
+  line-height:2;
+}
+footer a{
+    color:white;
+}
+footer span{
+  width: 90%;
+  margin:auto;
+
+
+}
+.icons{
+  text-align: center;
+  display: inline-block;
+}
+
 .flex-container {
+  flex-direction: column;
   display: block;
 
-  padding:10px;
 }
+
 .flex-container div {
-  background-color: #0f6a6d;
   margin-bottom: 10px;
   min-width: 100px;
   grid-gap: 10px;
   padding:2%;
   flex-grow: 1;
-  color: white;
 }
-  .flex-container h3{
-    text-align:center;
-    margin-top:10%;
-    font-family: 'Libre Baskerville', serif;
-    color: White;
-  }
-  .copyright{
-    text-align: center!important;
-    font-family: 'Libre Baskerville', serif;
-    color:white!important;
-  }
-  div p{
-    text-align: center;
-    font-family: 'Libre Baskerville', serif;
-    color: white;
-
-  }
-  .flex-container p{
-    color: white;
-  }
-
-  /* flex-shrink: 1; */
-}
-footer{
-    background: rgba(0,0,0,0.8);
-    padding: 40px;
+.flex-container h3{
+  text-align:center;
+  margin-top:20px;
+  font-family: 'Libre Baskerville', serif;
+  color: White;
 }
 
-footer p{
-    color: white;
-  }
-  footer span{
-
-  }
-  .fa {
+.fa {
   /* font-size: 30px; */
-  width: 130px;
-  height: 90%;
+  width: 100px;
+  height: 30px;
+  padding: 10px 0 0 0;
   text-align: center;
   text-decoration: none;
 
@@ -398,10 +441,16 @@ footer p{
   color: white;
 }
 
+.form-container{
 
-footer a{
-    color:white;
+  width:90%;
+  margin:auto;
 }
+
+
+
+
+
 
 /* Start Media Query */
 
@@ -411,45 +460,109 @@ footer a{
             /* width:250px; */
         }
         .main-container{
-          height:80vh;
+          /* height:80vh; */
+        }
+        nav ul{
+          flex-direction: row;
+          margin:auto;
+          align-items: center;
+          width:640px;
         }
         .nav ul li a{
           line-height: 3em;
           padding: 15px;
         }
-
-
         .flex-container {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          padding:10px 0;
-          color:white;
+          padding:10px;
+          flex-direction: row;
         }
         .culture{
           display: flex;
           flex-wrap: wrap;
-          width: 100%;
+          width: 90%;
+          margin: 20px auto;
         }
         section{
-          width: 30%;
+          width: 48%;
         }
         .about-hero{
           width: 48%;
 
         }
-        .rice{
-          width: 48%;
+        .img-left{
+          width: 50%;
+          display: inline-block;
         }
-        /* section {
-          width: 70%;
-          margin: auto;
-        } */
+        footer span{
+          width: 45%;
+          margin-left:0;
+          margin-right: 0;
 
+
+
+      }
+
+
+
+
+
+
+      }
+
+
+  @media screen and (min-width: 800px) {
+
+
+      .form-container{
+        width:45%;
+        display:inline-block;
+        margin-left: 1%;
+      }
+
+      input{
+        width: 60%;
+      }
+      button{
+        margin-top: 2%;
+        margin-bottom: 2%;
+      }
 }
-/* large screen styles below */
-@media screen and (min-width: 1300px) {
+  /* large screen styles below */
+  @media screen and (min-width: 1400px) {
 
-
-
+    .circle{
+      width:300px;
+      height:300px;
+    }
+    .flex-container {
+      width: 90%;
+      margin: auto;
+    }
+    footer span{
+      width: 90%;
+      margin:auto;
 }
+
+
+input{
+  width: 60%;
+}
+button{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+
+  }
+  /* large screen styles below */
+  @media screen and (min-width: 1600px) {
+
+    .circle{
+      width:400px;
+      height:400px;
+    }
+
+  }
