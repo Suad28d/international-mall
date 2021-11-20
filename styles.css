@@ -14,7 +14,7 @@ body{
 }
 img{
     /* Make all images responsive */
-    width: 100%;
+   width: 100%;
     /* display: block;
     margin:1% auto; */
 }
@@ -233,9 +233,16 @@ nav ul li a:hover {
   font-family: 'Libre Baskerville', serif;
   color: white;
 }
-section{
+aside{
   margin:15px;
   color:white!important;
+}
+aside p{
+  text-align: left;
+}
+
+aside h2{
+  text-align: center;
 }
 
 /* * BEGIN CONTACT US STYLES */
@@ -244,7 +251,8 @@ section{
   background: url("guysmellingspices1.jpg");
   /* https://www.pexels.com/photo/man-in-blue-shirt-inside-a-local-store-3889827/ */
   background-size: cover;
-  height: 900px;
+  height: 55vh;
+  background-position: center;
   /* width: 100%; */
 }
 /* .contact-hero h3{ */
@@ -267,67 +275,11 @@ section{
   text-decoration:none;
   color:white;
 }
-/* START MOBILE FORM STYLES */
-
-    .form-container{
-/*       TO CENTER add AUTO for margin right and left*/
-      margin: 20px auto;
-/*  WIDTH 100%  FOR MOBILE DEVICES*/
-      width:90%;
-      padding: 20px;
-      /* align: center; */
-      /* justify-content: center; */
-      /* display:flex; */
-      font-size:1em;
-    }
-    form p{
-      margin-bottom:5px;
-
-    }
-    label{
-      display:block;
-      color: white;
-    }
-    #newsletter input{
-      display:inline;
-      width:auto;
-    }
-    input{
-      /* FOR MOBILE use WIDTH:100% */
-      width:60%;
-      padding:1.2%;
-      margin:1.5% 0;
-      font-size: 1em;
-      border-radius: 4px;
-      border:1px solid #ccc;
-      box-sizing: border-box;
-      justify-content: center;
-    }
-    textarea{
-      min-height:100px;
-       /* FOR MOBILE use WIDTH:100% */
-      width: 100%;
-      padding: 2%;
-      margin: 1.5% 0;
-      font-size: 1em;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    button{
-      /* CHANGED COLORS bellow */
-      background: #45A99F;
-      border: 1px solid #45A99F;
-      /* Rounded corners */
-      border-radius: 4px;
-      /* Text color */
-      color:white;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      padding:10px 20px;
-      font-size: 1.1em;
-    }
-  /*        END MOBILE FORM STYLES */
+.main-container h2{
+  color:white;
+  text-align: center;
+  margin-bottom: 170px;
+}
 .main-container div{
   flex-grow:1;
 /* Change width to flex-basis */
@@ -368,7 +320,7 @@ section{
   width:220px;
   border:solid gray 4px;
   overflow:hidden;
-  margin:60% auto;
+  margin:60% auto 20px auto;
 }
 .circle h2{
   text-align:center;
@@ -446,7 +398,144 @@ footer span{
   width:90%;
   margin:auto;
 }
+/******8 start store styles *****/
 
+main{
+  max-width: 500px;
+  margin: 0 auto;
+
+}
+article{
+  margin: 1rem 0;
+}
+@supports (display: grid) {
+  main {
+    max-width: none;
+    margin: 0; }
+  article {
+    margin: 0; }
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem; }
+  }
+
+article {
+  display: flex;
+  flex-flow: column; }
+
+article > img {
+  order: -1;
+  align-self: center; }
+
+article {
+  padding: 2rem;
+background: black;
+}
+
+article > h1 {
+  margin: 1rem 1rem 0; }
+
+article > ul {
+  margin: 0 0 1rem; }
+
+article > p {
+  margin: 0.25em 1rem 1rem;
+  color: white;
+}
+.store{
+  padding: 10px;
+}
+main {
+  font-family: Avenir, Roboto, Helvetica, san-serif;
+  font-size: 80%; }
+
+article {
+  border: 1px solid teal;
+  border-radius: 1rem; }
+
+article > button {
+  margin-top: auto;
+  background: teal;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem; }
+}
+.shop-hero{
+background-size: cover;
+height: 55vh;
+background-position: center;
+background: url("sambousa.jpeg");
+}
+
+
+
+
+
+
+
+  /* START MOBILE FORM STYLES */
+
+      .form-container{
+  /*       TO CENTER add AUTO for margin right and left*/
+        margin: 20px auto;
+  /*  WIDTH 100%  FOR MOBILE DEVICES*/
+        width:90%;
+        padding: 20px;
+        /* align: center; */
+        /* justify-content: center; */
+        /* display:flex; */
+        font-size:1em;
+      }
+      form p{
+        margin-bottom:5px;
+
+      }
+      label{
+        display:block;
+        color: white;
+      }
+      #newsletter input{
+        display:inline;
+        width:auto;
+      }
+      input{
+        /* FOR MOBILE use WIDTH:100% */
+        width:60%;
+        padding:1.2%;
+        margin:1.5% 0;
+        font-size: 1em;
+        border-radius: 4px;
+        border:1px solid #ccc;
+        box-sizing: border-box;
+        justify-content: center;
+      }
+      textarea{
+        min-height:100px;
+         /* FOR MOBILE use WIDTH:100% */
+        width: 100%;
+        padding: 2%;
+        margin: 1.5% 0;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      button{
+        /* CHANGED COLORS bellow */
+        background: #45A99F;
+        border: 1px solid #45A99F;
+        /* Rounded corners */
+        border-radius: 4px;
+        /* Text color */
+        color:white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding:10px 20px;
+        font-size: 1.1em;
+      }
 
 
 
@@ -485,17 +574,19 @@ footer span{
           width: 90%;
           margin: 20px auto;
         }
-        section{
-          width: 48%;
+        aside{
+          width: 42%;
+          display: inline;
+
         }
         .about-hero{
           width: 48%;
 
         }
-        .img-left{
+        /* .img-left{
           width: 50%;
-          display: inline-block;
-        }
+          display: block;
+        } */
         footer span{
           width: 45%;
           margin-left:0;
