@@ -210,15 +210,12 @@ nav ul li a:hover {
 }
 /* END NAV STYLES------------------------------------- */
 
-
-
 .about-hero{
-  background: url("newpic1.jpg");
+  background: url("newpic2.jpg");
   /* https://i.pinimg.com/564x/72/03/a5/7203a57a9c1d6a1d44a16c02758f4333.jpg  */
   background-size: cover;
   height: 1100px;
-  }
-
+}
 
 .about-hero h1{
   text-align: left;
@@ -248,7 +245,7 @@ aside h2{
 /* * BEGIN CONTACT US STYLES */
 
 .contact-hero{
-  background: url("guysmellingspices1.jpg");
+  background: url("guysmellingspices2.jpg");
   /* https://www.pexels.com/photo/man-in-blue-shirt-inside-a-local-store-3889827/ */
   background-size: cover;
   height: 55vh;
@@ -262,10 +259,7 @@ aside h2{
   font-family: 'Libre Baskerville', serif;
   color: White;
 }
-
-
-
-  .main-container{
+.main-container{
   display:flex;
   flex-wrap: wrap;
   /* width:90%; */
@@ -290,8 +284,8 @@ aside h2{
   background-color: #B23A48;
 }
 .one .circle{
-    background-image: url("newpic1.jpg");
-/*    */
+    background-image: url("newpic2.jpg");
+/* https://www.pinterest.com/pin/89860955049262593/   */
     background-size: cover;
     background-position:top;
 }
@@ -299,7 +293,7 @@ aside h2{
   background-color: #f6bd60;
 }
 .two .circle{
-    background-image: url("sambusa1.jpg");
+    background-image: url("sambusa2.jpg");
 /*  https://i.pinimg.com/564x/37/bb/f8/37bbf80bb8fa997fdff4594f02733933.jpg  */
     background-size: cover;
     background-position:center;
@@ -308,7 +302,7 @@ aside h2{
   background-color: #84a59d;
 }
 .three .circle{
-    background-image: url("guysmellingspices1.jpg");
+    background-image: url("guysmellingspices2.jpg");
 /*  https://www.pexels.com/photo/man-in-blue-shirt-inside-a-local-store-3889827/  */
     background-size: cover;
     background-position:center;
@@ -324,11 +318,9 @@ aside h2{
 .circle h2{
   text-align:center;
 }
-
 footer{
 background-color: #0f6a6d;
 }
-
 footer p{
   color: white;
   line-height:2;
@@ -340,16 +332,11 @@ footer span{
   width: 90%;
   margin:auto;
 
-
 }
-
-
 .flex-container {
   flex-direction: column;
   display: block;
-
 }
-
 .flex-container div {
   margin-bottom: 10px;
   min-width: 100px;
@@ -363,18 +350,16 @@ footer span{
   font-family: 'Libre Baskerville', serif;
   color: White;
 }
-
 .fa {
   font-size: 30px;
-   width: 100px;
+  width: 100px;
   height: 30px;
   padding: 10px 0 0 0;
   text-align: center;
   text-decoration: none;
-
 }
 .fa:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 .fa-facebook {
   background: #3B5998;
@@ -388,24 +373,20 @@ footer span{
   background: #930000;
   color: white;
 }
-
 .form-container{
-
   width:90%;
   margin:auto;
 }
 /******8 start store styles *****/
-
 main{
   max-width: 500px;
   margin: 0 auto;
-
 }
 article{
   margin: 1rem 0;
 }
 @supports (display: grid) {
-  main {
+  main{
     max-width: none;
     margin: 0; }
   article {
@@ -486,13 +467,7 @@ article > button {
   /* font-size: 16px; */
 }
 
-
-
-
-
-
-
-  /* START MOBILE FORM STYLES */
+/* START MOBILE FORM STYLES */
 
       .form-container{
   /*       TO CENTER add AUTO for margin right and left*/
