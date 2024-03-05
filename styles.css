@@ -423,7 +423,7 @@ article > p {
 .store{
   padding: 10px;
 }
-.store-item img{
+.sale-item img{
     width: 300px;
     hight: 300px;
     object-fit: cover;
