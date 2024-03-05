@@ -423,10 +423,11 @@ article > p {
 .store{
   padding: 10px;
 }
-.store-item{
+.store-item img{
     width: 300px;
     hight: 300px;
     object-fit: cover;
+    display:block;
 }
     
 main {
