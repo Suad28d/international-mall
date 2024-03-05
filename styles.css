@@ -423,6 +423,12 @@ article > p {
 .store{
   padding: 10px;
 }
+.store-item{
+    width: 300px;
+    hight: 300px;
+    object-fit: cover;
+}
+    
 main {
   font-family: Avenir, Roboto, Helvetica, san-serif;
   font-size: 80%; }
