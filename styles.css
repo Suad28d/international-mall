@@ -3,14 +3,15 @@ body{
     padding:0;
     margin:0;
     font-family: Helvetica, sans-serif;
+    line-height: 1.5em;
     font-size: 16px;
 }
 .logo{
   display: block;
-  padding-top: 8px;
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
-  width:340px;
+  width:300px;
 
 }
 img{
@@ -20,25 +21,26 @@ img{
     margin:1% auto; */
 }
 h1{
-  text-align:center;
-  margin-top:45%;
   color: white;
-
+  text-align: center;
+}
+h2{
+    color:white;
 }
 p{
-  text-align: center;
   font-family: 'Libre Baskerville', serif;
 }
 div p{
-  text-align: center;
   font-family: 'Libre Baskerville', serif;
   color: white;
 }
 header{
-  background: linear-gradient(180deg, rgba(255,255,255,1) 66%, rgba(0,0,0,1) 66%);
-
+  /* background: linear-gradient(180deg, rgba(255,255,255,1) 66%, rgba(0,0,0,1) 66%); */
+  background: white;
 }
-
+.center{
+    text-align: center;
+}
 /* START NAV STYLES -------------------------------- */
 nav {
   background-color: #0f6a6d;
@@ -51,6 +53,9 @@ nav ul {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+
 }
 .fa-search{
   display:inline !important;
@@ -59,6 +64,11 @@ nav ul li {
   /* width: 25%; */
   display: inline-block;
   list-style-type: none;
+  margin:10px;
+  color:white;
+}
+nav ul li button{
+    margin:5px auto;
 }
 nav ul li a {
   color: white;
@@ -74,7 +84,7 @@ nav ul li a.logo {
   background-color: black;
 }
 nav ul li a:hover {
-  background-color: lightgray;
+  background-color: #85a59d;
 }
 
 .container {
@@ -150,7 +160,7 @@ nav ul li a:hover {
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: #0e2431;
+  background: #fff;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -234,10 +244,10 @@ aside{
   margin:15px;
   color:white!important;
 }
-aside p{
+aside p, aside a{
   text-align: left;
+  color:white;
 }
-
 aside h2{
   text-align: center;
 }
@@ -259,32 +269,43 @@ aside h2{
   font-family: 'Libre Baskerville', serif;
   color: White;
 }
-.main-container{
+.main-container, .about-container{
   display:flex;
   flex-wrap: wrap;
   /* width:90%; */
   margin-right:auto;
   margin-left:auto;
+
 }
-.main-container a{
-  text-decoration:none;
-  color:white;
-}
-.main-container h2{
+.about-container, .wrapper{display:none;}
+
+.main-container h2, .about-container h2{
   color:white;
   text-align: center;
-  margin-bottom: 170px;
+  /* margin-bottom: 170px; */
 }
-.main-container div{
+.main-container div, .about-container div{
   flex-grow:1;
 /* Change width to flex-basis */
   flex-basis:170px;
+  /* min-height: 350px; */
+}
+.main-container a, .about-container a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 480px;
+    flex-direction: column;
+    justify-content: center;
 }
 .one{
   background-color: #B23A48;
+
 }
 .one .circle{
-    background-image: url("newpic2.jpg");
+    background-image: url("img/mall.webp");
 /* https://www.pinterest.com/pin/89860955049262593/   */
     background-size: cover;
     background-position:top;
@@ -313,13 +334,16 @@ aside h2{
   width:220px;
   border:solid gray 4px;
   overflow:hidden;
-  margin:60% auto 20px auto;
+  /* margin:60% auto 20px auto; */
+  margin:20px;
+
 }
 .circle h2{
   text-align:center;
 }
 footer{
 background-color: #0f6a6d;
+padding: 20px;
 }
 footer p{
   color: white;
@@ -333,23 +357,37 @@ footer span{
   margin:auto;
 
 }
+footer h2{
+    color:white;
+}
 .flex-container {
   flex-direction: column;
   display: block;
 }
-.flex-container div {
+.flex-container .info, .flex-container .map {
   margin-bottom: 10px;
   min-width: 100px;
-  grid-gap: 10px;
   padding:2%;
   flex-grow: 1;
 }
-.flex-container h3{
-  text-align:center;
+.info h3, .info p{
+  text-align:left;
   margin-top:20px;
   font-family: 'Libre Baskerville', serif;
   color: White;
 }
+
+.table {
+    color:white;
+  display: grid;
+  font-family: 'Libre Baskerville', serif;
+  font-size:16px;
+  grid-template-columns: 150px 100px;
+/*  The left col width and the right col width */
+  grid-gap: 15px;
+  margin: 15px auto;
+}
+
 .fa {
   font-size: 30px;
   width: 100px;
@@ -377,14 +415,12 @@ footer span{
   width:90%;
   margin:auto;
 }
-/******8 start store styles *****/
+/****** start store styles *****/
 main{
   max-width: 500px;
   margin: 0 auto;
 }
-article{
-  margin: 1rem 0;
-}
+
 @supports (display: grid) {
   main{
     max-width: none;
@@ -397,9 +433,7 @@ article{
     grid-gap: 1rem; }
   }
 
-article {
-  display: flex;
-  flex-flow: column; }
+
 
 article > img {
   order: -1;
@@ -407,7 +441,12 @@ article > img {
 
 article {
   padding: 2rem;
-background: black;
+    margin: 1rem 0;
+/* background: black; */
+/* border: 1px solid teal; */
+border-radius: 1rem;
+display: flex;
+flex-flow: column;
 }
 
 article > h1 {
@@ -429,14 +468,6 @@ article > p {
     object-fit: cover;
     display:block;
 }
-    
-main {
-  font-family: Avenir, Roboto, Helvetica, san-serif;
-  font-size: 80%; }
-
-article {
-  border: 1px solid teal;
-  border-radius: 1rem; }
 
 article > button {
   margin-top: auto;
@@ -448,12 +479,7 @@ article > button {
   font-size: 1.2rem; }
 }
 
- h1{
-  text-align:center;
-  font-family: 'Libre Baskerville', serif;
-  color: white;
 
-}
 .help {
   Color: White;
   font-size: 50px;
@@ -476,8 +502,8 @@ article > button {
 
 /* START MOBILE FORM STYLES */
 
-      .form-container{
-  /*       TO CENTER add AUTO for margin right and left*/
+  .form-container{
+/*       TO CENTER add AUTO for margin right and left*/
         margin: 20px auto;
   /*  WIDTH 100%  FOR MOBILE DEVICES*/
         width:90%;
@@ -486,58 +512,62 @@ article > button {
         /* justify-content: center; */
         /* display:flex; */
         font-size:1em;
-      }
-      form p{
-        margin-bottom:5px;
+  }
+  form p{
+    margin-bottom:5px;
 
-      }
-      label{
-        display:block;
-        color: white;
-      }
-      #newsletter input{
-        display:inline;
-        width:auto;
-      }
-      input{
-        /* FOR MOBILE use WIDTH:100% */
-        width:60%;
-        padding:1.2%;
-        margin:1.5% 0;
-        font-size: 1em;
-        border-radius: 4px;
-        border:1px solid #ccc;
-        box-sizing: border-box;
-        justify-content: center;
-      }
-      textarea{
-        min-height:100px;
-         /* FOR MOBILE use WIDTH:100% */
-        width: 100%;
-        padding: 2%;
-        margin: 1.5% 0;
-        font-size: 1em;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-      button{
-        /* CHANGED COLORS bellow */
-        background: #45A99F;
-        border: 1px solid #45A99F;
-        /* Rounded corners */
-        border-radius: 4px;
-        /* Text color */
-        color:white;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding:10px 20px;
-        font-size: 1.1em;
-      }
-
-
+  }
+  label{
+    display:block;
+    color: white;
+  }
+  #newsletter input{
+    display:inline;
+    width:auto;
+  }
+  input{
+    /* FOR MOBILE use WIDTH:100% */
+    width:60%;
+    padding:1.2%;
+    margin:1.5% 0;
+    font-size: 1em;
+    border-radius: 4px;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  textarea{
+    min-height:100px;
+     /* FOR MOBILE use WIDTH:100% */
+    width: 100%;
+    padding: 2%;
+    margin: 1.5% 0;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  button{
+    /* CHANGED COLORS bellow */
+    background: #45A99F;
+    border: 1px solid #45A99F;
+    /* Rounded corners */
+    border-radius: 4px;
+    /* Text color */
+    color:white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding:10px 20px;
+    font-size: 1.1em;
+  }
 
 
+/* ABOUT PAGE */
+.about-wrapper{
+    width:90%;
+    margin: 100px auto;
+
+}
 
 /* Start Media Query */
 
@@ -549,6 +579,7 @@ article > button {
         .main-container{
           /* height:80vh; */
         }
+
         nav ul{
           flex-direction: row;
           margin:auto;
@@ -566,17 +597,7 @@ article > button {
           padding:10px;
           flex-direction: row;
         }
-        .culture{
-          display: flex;
-          flex-wrap: wrap;
-          width: 90%;
-          margin: 20px auto;
-        }
-        aside{
-          width: 42%;
-          display: inline;
 
-        }
         .about-hero{
           width: 48%;
 
@@ -589,26 +610,58 @@ article > button {
           width: 45%;
           margin-left:0;
           margin-right: 0;
-
-
-
-      }
-
-
-
-
-
+       }
 
       }
 
 
   @media screen and (min-width: 800px) {
+      .navbar{
+          display:none;
+      }
+      .main-container{
 
-
+      }
+      .main-container a{
+          min-height:100px;
+          height:60vh;
+          min-height: 600px;
+          justify-content: end;
+          margin-bottom: 30px;
+      }
+      .about-container a{
+          height:70px;
+          min-height:70px;
+      }
+      .wrapper{
+          display: block;
+      }
+      .about-container{
+          height:70px!important;
+          display:flex;
+          flex-wrap: wrap;
+          /* width:90%; */
+          margin-right:auto;
+          margin-left:auto;
+      }
+      .culture{
+        display: flex;
+        flex-wrap: wrap;
+        /* width: 90%; */
+        margin: 20px auto;
+      }
+      aside{
+        width: 28%;
+        flex-grow: 1;
+        display: inline;
+      }
+      aside img{
+          height: 500px;
+          object-fit: cover;
+      }
       .form-container{
-        width:45%;
+        width:600px;
         display:inline-block;
-        margin-left: 1%;
       }
 
       input{
@@ -619,12 +672,20 @@ article > button {
         margin-bottom: 2%;
       }
       * {
-    box-sizing: border-box;
-  }
+        box-sizing: border-box;
+      }
 }
   /* large screen styles below */
   @media screen and (min-width: 1400px) {
+      .main-container{
 
+      }
+      .main-container a{
+          height:65vh;
+      }
+      .about-container a{
+          height:70px;
+      }
     .circle{
       width:300px;
       height:300px;
@@ -636,25 +697,23 @@ article > button {
     footer span{
       width: 90%;
       margin:auto;
-}
-
-
-input{
-  width: 60%;
-}
-button{
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-
-
+    }
+    input{
+      width: 60%;
+    }
+    button{
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
   }
   /* large screen styles below */
   @media screen and (min-width: 1600px) {
-
+      .main-container a{
+          height:70vh;
+      }
     .circle{
-      width:400px;
-      height:400px;
+      width:350px;
+      height:350px;
     }
 
   }
