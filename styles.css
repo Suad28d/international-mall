@@ -254,15 +254,15 @@ aside h2{
 
 /* * BEGIN CONTACT US STYLES */
 
-.contact-hero{
-  background: url("guysmellingspices2.jpg");
+.dine-hero{
+  background: url("family.jpg");
   /* https://www.pexels.com/photo/man-in-blue-shirt-inside-a-local-store-3889827/ */
   background-size: cover;
   height: 55vh;
   background-position: center;
   /* width: 100%; */
 }
-.contact-hero h3{
+.dine-hero h3{
   text-align: left;
   margin-left: 5%;
   right:auto;
@@ -314,7 +314,7 @@ aside h2{
   background-color: #f6bd60;
 }
 .two .circle{
-    background-image: url("sambusa2L.jpg");
+    background-image: url("twomanL.jpg");
 /*  https://i.pinimg.com/564x/37/bb/f8/37bbf80bb8fa997fdff4594f02733933.jpg  */
     background-size: cover;
     background-position:center;
@@ -323,7 +323,7 @@ aside h2{
   background-color: #84a59d;
 }
 .three .circle{
-    background-image: url("guysmellingspices2.jpg");
+    background-image: url("family.jpg");
 /*  https://www.pexels.com/photo/man-in-blue-shirt-inside-a-local-store-3889827/  */
     background-size: cover;
     background-position:center;
@@ -469,7 +469,7 @@ article > p {
     display:block;
 }
 
-article > button {
+/* article > button {
   margin-top: auto;
   background: teal;
   color: white;
@@ -477,7 +477,7 @@ article > button {
   border: none;
   border-radius: 1rem;
   font-size: 1.2rem; }
-}
+} */
 
 
 .help {
