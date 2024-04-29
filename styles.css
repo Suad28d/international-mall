@@ -556,7 +556,7 @@ article > p {
 
 /* Start Media Query */
 /* For short screens change flex box----------------- */
-@media (min-height: 790px) {
+@media (max-height: 790px) {
     .main-container{
         min-height:650px !important;
     }
@@ -687,8 +687,12 @@ article > p {
     .culture aside:not(:first-child) {
       flex: 1;
     }
-
-
+    aside p{
+        margin-top:0;
+    }
+    .img-left{
+        margin-bottom:20px;
+    }
 }
   /* large screen styles below */
   @media screen and (min-width: 1400px) {
@@ -725,6 +729,12 @@ article > p {
   @media screen and (min-width: 1600px) {
       .main-container {
           height:70vh;
+      }
+      .about-wrapper{
+           max-width: 1800px;
+      }
+      .footer-grid{
+           max-width: 1800px;
       }
     .circle{
       width:350px;
